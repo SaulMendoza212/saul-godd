@@ -1,0 +1,89 @@
+:root {
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --text: #222;
+  --primary: #1e3c72;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.hero {
+  padding: 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary), #3b82f6);
+  color: white;
+}
+
+.hero button {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.panel {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slider img {
+  width: 100%;
+  max-width: 500px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.slider button {
+  font-size: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+}
+
+ul li {
+  background: var(--primary);
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: 999px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}

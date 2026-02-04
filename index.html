@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Saúl Mendoza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="hero">
+    <h1 id="titulo">Arepa de queso </h1>
+    <p id="rol"> Data Scientist</p>
+    <button id="toggleTheme">🌙</button>
+    <p>Pulsa la luna para modo oscuro</p>
+  </header>
+
+  <main class="wrapper">
+
+    <section class="panel">
+      <h2>Perfil</h2>
+      <p id="perfilTexto">
+        Desarrollo interfaces modernas aplicando buenas prácticas,
+        accesibilidad y manipulación avanzada del DOM
+      </p>
+      <button id="editarPerfil">Actualizar perfil</button>
+    </section>
+
+    <section class="panel">
+      <h2>Galería dinámica</h2>
+      <div class="slider">
+        <button id="prev">⟨</button>
+        <img id="sliderImg" src="imagen.saul.jpg" alt="Galería">
+        <button id="next">⟩</button>
+      </div>
+      <p class="info">La galería cambia automáticamente cada 3 segundos</p>
+    </section>
+
+    <section class="panel">
+      <h2>Habilidades (creadas con JS)</h2>
+      <ul id="skills"></ul>
+    </section>
+
+    <section class="panel">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="email" id="email" placeholder="Email">
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="feedback"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Saúl Mendoza — Universidad Politécnica de Madrid</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
