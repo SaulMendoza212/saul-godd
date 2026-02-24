@@ -1,13 +1,13 @@
 /* =====================
    TEMA OSCURO PERSISTENTE
 ===================== */
-const themeBtn = document.getElementById("toggleTheme");
+const btn = document.getElementById("toggleTheme");
 
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
 }
 
-themeBtn.addEventListener("click", () => {
+btn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   localStorage.setItem(
     "theme",
